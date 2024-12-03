@@ -1,0 +1,34 @@
+{
+  "name": "@visu/plugins",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "visu plugins",
+  "author": "yu <381740310@qq.com> (https://github.com/zhengyuzi)",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "stub": "stubb"
+  },
+  "peerDependencies": {
+    "konva": ">=9.3.16"
+  },
+  "dependencies": {
+    "@visu/types": "workspace:*",
+    "decimal.js": "^10.4.3",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.1",
+    "nanoid": "^5.0.9"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.13"
+  }
+}

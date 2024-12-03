@@ -1,0 +1,27 @@
+{
+  "name": "@visu/core",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "visu core",
+  "author": "yu <381740310@qq.com> (https://github.com/zhengyuzi)",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "stub": "stubb"
+  },
+  "peerDependencies": {
+    "konva": ">=9.3.16"
+  },
+  "dependencies": {
+    "@visu/types": "workspace:*"
+  }
+}
